@@ -1,0 +1,2 @@
+link github : https://github.com/Prabatha/idx10_multiple_linier_regresion.git
+link streamlit.io : https://idx-10.streamlit.app

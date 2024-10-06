@@ -1,0 +1,35 @@
+Code tersebut adalah implementasi sederhana dari regresi linier menggunakan pustaka scikit-learn (sklearn) dalam bahasa pemrograman Python. Tujuannya adalah untuk memprediksi harga penutupan (Close Price) suatu saham berdasarkan harga pembukaan (Open Price).
+
+Berikut adalah penjelasan langkah-langkah utama dalam kode tersebut:
+
+Import Library:
+
+Mengimpor numpy dan pandas untuk manipulasi data.
+Mengimpor matplotlib dan seaborn untuk visualisasi data.
+Mengimpor LinearRegression dari sklearn untuk membuat model regresi linier.
+Mengimpor train_test_split dari sklearn untuk membagi dataset menjadi data latih dan data uji.
+Mengimpor r2_score dari sklearn.metrics untuk mengukur kinerja model.
+Membaca Dataset:
+
+Membaca dataset dari file CSV menggunakan pandas.
+Menggunakan kolom 'Open' dan 'Close' dari dataset.
+Visualisasi Data:
+
+Menampilkan grafik harga pembukaan dan harga penutupan menggunakan matplotlib.
+Menampilkan matriks korelasi antar fitur menggunakan heatmap seaborn.
+Pembuatan Model Regresi Linier:
+
+Memisahkan dataset menjadi data latih dan data uji menggunakan train_test_split.
+Membuat objek LinearRegression dan melatih model dengan data latih.
+Evaluasi Model pada Data Latih:
+
+Menampilkan grafik untuk membandingkan harga aktual dengan harga yang diprediksi dari data latih.
+Mengukur kinerja model pada data latih menggunakan r2_score.
+Evaluasi Model pada Data Uji:
+
+Menampilkan grafik untuk membandingkan harga aktual dengan harga yang diprediksi dari data uji.
+Mengukur kinerja model pada data uji menggunakan r2_score.
+Prediksi Harga Penutup:
+
+Menggunakan model regresi linier yang telah dilatih untuk memprediksi harga penutup berdasarkan harga pembukaan yang diberikan.
+Sebagai catatan, regresi linier adalah metode statistik yang digunakan untuk menemukan hubungan linier antara dua variabel, dan dalam konteks ini, digunakan untuk memprediksi harga penutup berdasarkan harga pembukaan saham. R2 score digunakan untuk mengukur sejauh mana model dapat menjelaskan variabilitas dalam data. Semakin tinggi R2 score, semakin baik model dapat menjelaskan variasi dalam data.
